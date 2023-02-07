@@ -152,8 +152,8 @@ let overwriteMain: (() => unknown) | undefined;
     ].join("");
     const spaceBetween = length - stripVTControlCharacters(parameter).length;
     const formattedDesc = description
-      .replaceAll(type??/^$/g, type !== undefined ? kolor.yellow(type) : "")
-      .replaceAll(/(--?[a-zA-Z-]+)/g,kolor.green("$1"));
+      .replace(type??/^$/g, type !== undefined ? kolor.yellow(type) : "")
+      .replace(/(--?[a-zA-Z-]+)/g,kolor.green("$1"));
     return "  "+kolor.green(parameter)+" ".repeat(spaceBetween > 0 ? spaceBetween : 0)+kolor.gray(formattedDesc);
   };
 

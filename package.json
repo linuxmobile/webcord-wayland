@@ -3,7 +3,7 @@
   "name": "webcord",
   "productName": "WebCord",
   "version": "4.1.1",
-  "description": "A Discord and Fosscord client made with the Electron API.",
+  "description": "A Discord and Fosscord client made with the Electron API. For Wayland w/ screenshare and audioshare support",
   "main": "app/code/common/main.js",
   "scripts": {
     "prepare": "husky install",
