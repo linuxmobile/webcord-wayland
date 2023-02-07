@@ -6,9 +6,6 @@ on:
 env:
   WEBCORD_BUILD: DEVEL
 
-permissions:
-  contents: write
-
 jobs:
   publish:
     strategy:
